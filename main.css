@@ -1,0 +1,26 @@
+h1{
+    color: rgb(225, 3, 3);
+}
+
+h2 {
+    color: green;
+}
+
+#economy h2{
+    color: yellow;
+}
+
+.creation-date{
+    color:rgb(239, 20, 20);
+}
+
+.fut-date {
+    color: cyan;
+}
+
+* {
+    color: deeppink; 
+    <!-- estiliza todo conteudo não marcado -->
+    
+}
+
