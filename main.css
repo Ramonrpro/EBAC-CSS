@@ -1,26 +1,124 @@
-h1{
-    color: rgb(225, 3, 3);
-}
-
-h2 {
-    color: green;
-}
-
-#economy h2{
-    color: yellow;
-}
-
-.creation-date{
-    color:rgb(239, 20, 20);
-}
-
-.fut-date {
-    color: cyan;
-}
 
 * {
-    color: deeppink; 
-    <!-- estiliza todo conteudo não marcado -->
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body > header {
+    background-color: rgb(53, 53, 53);
+    padding: 16px 0;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 180px;*/
+    width: 100%;
+}
+
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: rgb(64, 63, 62);
+    color: white;
+    padding: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.042)
+}
+
+#sports .articles article a {
+    background-color:rgba(0, 128, 0, 0.4)
+}
+
+#economy {
+    background-color: rgba(234, 98, 234, 0.178);
+}
+
+#economy .articles article a {
+    background-color: rgba(80, 11, 145, 0.393);
+}
+
+#entretenimento {
+    background-color: rgba(0, 0, 139, 0.153);
+}
+
+#entretenimento .articles article a {
+    background-color: rgba(0, 0, 255, 0.423);
+}
+
+#tecnologia {
+    background-color: rgba(192, 0, 86, 0.206);
+}
+
+#tecnologia .articles article a {
+    background-color: rgba(192, 0, 86, 0.460);
+}
